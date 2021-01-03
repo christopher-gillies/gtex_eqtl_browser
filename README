@@ -24,10 +24,35 @@ echo 'deb http://deb.debian.org/debian sid main' >> /etc/apt/sources.list
 
 ### sqlite3 commands
 
+#### From Bash
+
+```
+sqlite3 /data/eqtl_database.db
+```
+
 ```
 .tables
 
 pragma table_info(gene_info);
 
 select * from gene_info where gene_name = 'INF2';
+
+
+pragma table_info(eGene);
+
+select * from eGene limit 5;
+
+
+pragma table_info(eSNP);
+
+select * from eSNP limit 5;
+
 ```
+
+### Copy on windows using powershell
+
+```
+Copy-Item .\gtex_eqtl_browser2\* .\gtex_eqtl_browser -recurse
+```
+
+

@@ -44,7 +44,7 @@ class GTFRow:
 
     @staticmethod
     def header():
-        return ','.join(['chrom','type','start','stop','strand','gend_id','gene_name','gene_type','transcript_id','transcript_name','transcript_type','level'])
+        return ','.join(['chrom','type','start','stop','strand','gene_id','gene_name','gene_type','transcript_id','transcript_name','transcript_type','level'])
 
     def __repr__(self):
         return ','.join( [self.chrom, self.type, self.start, self.stop, self.strand, self.gene_id, self.gene_name, self.gene_type, self.transcript_id, self.transcript_name, self.transcript_type, self.level] )
