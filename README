@@ -55,4 +55,7 @@ select * from eSNP limit 5;
 Copy-Item .\gtex_eqtl_browser2\* .\gtex_eqtl_browser -recurse
 ```
 
-
+### Git info
+```
+git push origin main 
+```
